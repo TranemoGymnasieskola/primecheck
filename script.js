@@ -28,7 +28,6 @@ primBut.addEventListener('submit', (e) => {
 
 
 divBut.addEventListener('submit', (e) => {
-	// debugger;
 	wDivArray = [];
 	const toCheck = document.getElementById('plain').value;
 	const root = Math.ceil(Math.sqrt(toCheck));
@@ -70,28 +69,3 @@ function checkDiv (toCheckF, rootF) {
 	}
 
 }
-
-/*
-function checkDiv (toCheckF, rootF) {
-	for (let i = rootF - 1; i > 1; i--) {
-		let divRoot = toCheckF / i;
-		if (divRoot % 1 === 0) {
-			let numToStrLow  = i.toString();
-			let numToStrHigh = divRoot.toString();
-			wDivArray.push(' ' + numToStrLow);
-			wDivArray.push(' ' + numToStrHigh);
-		}
-	}
-
-} */
-
-/* function checkDiv (toCheckF) {
-	for (let i = toCheckF - 1; i > 1; i--) {
-		let divCheck = toCheckF / i; 
-		if (divCheck % 1 === 0) {
-			let numToStr = i.toString();
-			wDivArray.push(numToStr);
-		}
-	}
-
-} */
